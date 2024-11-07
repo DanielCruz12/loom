@@ -1,5 +1,7 @@
 import { ModeToggle } from "@/components/dark-mode";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,6 +26,12 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+
+        <Link href="/auth/sign-in">
+        <Button className="text-base flex gap-x-2">
+          Login
+        </Button>
+      </Link>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <a
